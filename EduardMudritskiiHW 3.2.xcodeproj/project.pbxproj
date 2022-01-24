@@ -11,6 +11,8 @@
 		2382FF16279EFB7A00B318A8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2382FF15279EFB7A00B318A8 /* ContentView.swift */; };
 		2382FF18279EFB7D00B318A8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2382FF17279EFB7D00B318A8 /* Assets.xcassets */; };
 		2382FF1B279EFB7D00B318A8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2382FF1A279EFB7D00B318A8 /* Preview Assets.xcassets */; };
+		2393177D279F0312007846B7 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2393177C279F0311007846B7 /* Settings.swift */; };
+		2393177F279F053A007846B7 /* ColorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2393177E279F0539007846B7 /* ColorView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		2382FF15279EFB7A00B318A8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		2382FF17279EFB7D00B318A8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2382FF1A279EFB7D00B318A8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		2393177C279F0311007846B7 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		2393177E279F0539007846B7 /* ColorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +39,8 @@
 		2382FF07279EFB7A00B318A8 = {
 			isa = PBXGroup;
 			children = (
+				2393177E279F0539007846B7 /* ColorView.swift */,
+				2393177C279F0311007846B7 /* Settings.swift */,
 				2382FF12279EFB7A00B318A8 /* EduardMudritskiiHW 3.2 */,
 				2382FF11279EFB7A00B318A8 /* Products */,
 			);
@@ -137,6 +143,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2393177F279F053A007846B7 /* ColorView.swift in Sources */,
+				2393177D279F0312007846B7 /* Settings.swift in Sources */,
 				2382FF16279EFB7A00B318A8 /* ContentView.swift in Sources */,
 				2382FF14279EFB7A00B318A8 /* EduardMudritskiiHW_3_2App.swift in Sources */,
 			);
