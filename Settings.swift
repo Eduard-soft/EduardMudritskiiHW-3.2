@@ -56,7 +56,6 @@ struct Settings: View {
 
 struct ColorSliderValue: View {
     @Binding var value: Double
-    
     var body: some View {
         Slider(value: $value, in: 0...255)
     }

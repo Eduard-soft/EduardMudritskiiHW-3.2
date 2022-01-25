@@ -12,6 +12,7 @@ struct ColorView: View {
     var body: some View {
         RoundedRectangle(cornerRadius:  20)
             .frame(width: 350, height: 250)
+        
     }
 }
 
