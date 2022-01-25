@@ -17,6 +17,8 @@ struct Settings: View {
     @State private var greenColorValue = ""
     @State private var blueColorValue = ""
     
+    @FocusState private var amountIsFocused: Bool
+    
     var body: some View {
         VStack {
                 HStack(spacing: 10) {
@@ -26,6 +28,7 @@ struct Settings: View {
                         .accentColor(.red)
                     TextField("0", text: $redColorValue)
                         .keyboardType(.decimalPad)
+                        .focused($amountIsFocused)
                          .textFieldStyle(.roundedBorder)
                          .fixedSize()
                 }
@@ -36,8 +39,9 @@ struct Settings: View {
                         .accentColor(.green)
                         .foregroundColor(.green)
                     TextField("0", text: $greenColorValue)
-                        .textFieldStyle(.roundedBorder)
                         .keyboardType(.decimalPad)
+                        .focused($amountIsFocused)
+                        .textFieldStyle(.roundedBorder)
                         .fixedSize()
                 }
                 HStack(spacing: 10) {
@@ -45,9 +49,17 @@ struct Settings: View {
                     ColorSliderValue(value: $blueSliderValue)
                         .foregroundColor(.blue)
                     TextField("0", text: $blueColorValue)
-                        .textFieldStyle(.roundedBorder)
                         .keyboardType(.decimalPad)
+                        .focused($amountIsFocused)
+                        .textFieldStyle(.roundedBorder)
                         .fixedSize()
+                }
+                .toolbar {
+                    ToolbarItemGroup(placement: .keyboard) {
+                        Button("Done") {
+                            amountIsFocused = false
+                        }
+                    }
                 }
         }
         .padding()
