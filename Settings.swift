@@ -22,15 +22,16 @@ struct Settings: View {
     var body: some View {
         VStack {
                 HStack(spacing: 10) {
-                    Text("\(lround(redSliderValue))").foregroundColor(.red)
+                    Text("\(lround(redSliderValue))")
+                        .foregroundColor(.red)
                         .fixedSize()
                     ColorSliderValue(value: $redSliderValue)
                         .accentColor(.red)
                     TextField("0", text: $redColorValue)
                         .keyboardType(.decimalPad)
                         .focused($amountIsFocused)
-                         .textFieldStyle(.roundedBorder)
-                         .fixedSize()
+                        .textFieldStyle(.roundedBorder)
+                        .fixedSize()
                 }
                 HStack(spacing: 10) {
                     Text("\(lround(greenSliderValue))").foregroundColor(.green)
@@ -61,10 +62,10 @@ struct Settings: View {
                         }
                     }
                 }
-        }
-        .padding()
-    }
-}
+            }
+           .padding()
+       }
+  }
 
 struct ColorSliderValue: View {
     @Binding var value: Double
