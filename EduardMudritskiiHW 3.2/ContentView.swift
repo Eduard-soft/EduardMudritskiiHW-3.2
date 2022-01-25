@@ -9,15 +9,17 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            ColorView()
-            Settings()
-                
+        ZStack {
+            Color(red: 0.10, green: 0.74, blue: 0.61)
+                .ignoresSafeArea()
+            VStack {
+                ColorView()
+                Settings()
+                Spacer()
+            }
+            .padding()
             
         }
-       
-        Spacer(minLength: 300)
-        
     }
 }
 

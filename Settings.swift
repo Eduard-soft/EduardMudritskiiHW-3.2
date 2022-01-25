@@ -17,15 +17,15 @@ struct Settings: View {
     @State private var greenColorValue = ""
     @State private var blueColorValue = ""
     
-    //.init(red: redSliderValue, green: greenSliderValue, blue: blueSliderValue)
-    
     var body: some View {
         VStack {
                 HStack(spacing: 10) {
                     Text("\(lround(redSliderValue))").foregroundColor(.red)
                         .fixedSize()
                     ColorSliderValue(value: $redSliderValue)
+                        .accentColor(.red)
                     TextField("0", text: $redColorValue)
+                        .keyboardType(.decimalPad)
                          .textFieldStyle(.roundedBorder)
                          .fixedSize()
                 }
@@ -33,9 +33,11 @@ struct Settings: View {
                     Text("\(lround(greenSliderValue))").foregroundColor(.green)
                         .fixedSize()
                     ColorSliderValue(value: $greenSliderValue)
+                        .accentColor(.green)
                         .foregroundColor(.green)
                     TextField("0", text: $greenColorValue)
                         .textFieldStyle(.roundedBorder)
+                        .keyboardType(.decimalPad)
                         .fixedSize()
                 }
                 HStack(spacing: 10) {
@@ -44,9 +46,9 @@ struct Settings: View {
                         .foregroundColor(.blue)
                     TextField("0", text: $blueColorValue)
                         .textFieldStyle(.roundedBorder)
+                        .keyboardType(.decimalPad)
                         .fixedSize()
                 }
-        
         }
         .padding()
     }
@@ -57,11 +59,7 @@ struct ColorSliderValue: View {
     
     var body: some View {
         Slider(value: $value, in: 0...255)
-            
-        
     }
-    
-    
 }
 
 struct Settings_Previews: PreviewProvider {
