@@ -43,7 +43,6 @@
 		2382FF07279EFB7A00B318A8 = {
 			isa = PBXGroup;
 			children = (
-				23E0726027A6F2230093A990 /* TextView.swift */,
 				2382FF12279EFB7A00B318A8 /* EduardMudritskiiHW 3.2 */,
 				2382FF11279EFB7A00B318A8 /* Products */,
 			);
@@ -64,6 +63,7 @@
 				2382FF15279EFB7A00B318A8 /* ContentView.swift */,
 				2393177C279F0311007846B7 /* ColorSliderView.swift */,
 				23E0725E27A6DF360093A990 /* TextFieldView.swift */,
+				23E0726027A6F2230093A990 /* TextView.swift */,
 				2393177E279F0539007846B7 /* ColorView.swift */,
 				2382FF17279EFB7D00B318A8 /* Assets.xcassets */,
 				2382FF19279EFB7D00B318A8 /* Preview Content */,
